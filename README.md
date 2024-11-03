@@ -29,3 +29,25 @@ Make sure you have Python installed on your machine. You can download it from [p
    ```bash
    git clone https://github.com/yourusername/repository-name.git
    cd repository-name
+   
+2. Create a virtual environment (optional but recommended):
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate  # On Windows use `.venv\Scripts\activate`
+   
+3. Install the required packages:
+    ```bash
+   pip install -r requirements.txt
+
+### Running the Application
+1. Run the Streamlit app:
+   ```bash
+   streamlit run app.py
+
+2. Open your web browser and navigate to http://localhost:8501 to view the application.
+
+### Model
+The application uses a pre-trained Keras model saved in the stock_predictions.h5 file for making predictions. Ensure that this file is located in the same directory as the app.py.
+
+### Jupyter Notebook
+The Jupyter Notebook stock_market_prediction.ipynb contains the code for the stock market prediction model training. You can modify and run it to train the model with different parameters.
